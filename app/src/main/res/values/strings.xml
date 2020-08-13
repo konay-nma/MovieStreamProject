@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MoView</string>
+    <string name="action_settings">Settings</string>
+	<string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mollis ex, id aliquam eros euismod ut. Donec placerat magna vel purus auctor sollicitudin. Aenean vel consequat purus. In laoreet, tellus id cursus porttitor, nisi est blandit sem, nec gravida orci sapien et purus. Morbi sodales risus tellus, sed rhoncus neque accumsan sed. Mauris sed urna nec justo mattis dictum vitae non velit. Proin tincidunt commodo neque ut lobortis. Fusce nec faucibus libero, at bibendum massa. Fusce aliquet luctus massa quis pharetra. Nunc aliquet sapien ac leo ultrices, at molestie libero imperdiet. Pellentesque aliquet consectetur efficitur. Integer hendrerit condimentum dolor quis auctor.</string>
+</resources>

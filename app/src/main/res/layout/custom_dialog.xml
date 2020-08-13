@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:text="Download Info!"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:gravity="center"
+		android:textStyle="bold|italic"
+		android:background="@color/colorPrimary"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Choose download file size"
+		android:gravity="center"
+		android:textStyle="italic"
+		android:layout_marginTop="5dp"/>
+
+	<RadioGroup
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/radio_group">
+
+		<RadioButton
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:text="SD"
+			android:checked="true"
+			android:id="@+id/radio_btn_sd"/>
+
+		<RadioButton
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:text="HD"
+			android:id="@+id/radio_btn_hd"/>
+
+	</RadioGroup>
+
+	<LinearLayout
+		android:weightSum="3"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="20dp">
+
+		<TextView
+			android:textAllCaps="false"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="Cancel"
+			android:gravity="center_vertical"
+			android:paddingStart="20dp"
+			android:id="@+id/cancel_watch"/>
+
+		<TextView
+			android:textAllCaps="false"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="Download"
+			android:gravity="center"
+			android:id="@+id/download"/>
+
+		<TextView
+			android:textAllCaps="false"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="Watch Now"
+			android:gravity="center|end"
+			android:paddingEnd="20dp"
+			android:id="@+id/watch"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

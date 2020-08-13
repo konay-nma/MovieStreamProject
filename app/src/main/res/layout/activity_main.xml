@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	android:background="@color/colorPrimary">
+
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorPrimary"
+		app:popupTheme="@style/AppTheme.PopupOverlay"/>
+	
+	<com.github.ybq.android.spinkit.SpinKitView
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/spin_kit"
+		style="@style/SpinKitView.FadingCircle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_below="@id/toolbar"
+		app:SpinKit_Color="@android:color/darker_gray"
+		android:visibility="gone"/>
+	
+	
+	<android.support.design.widget.CoordinatorLayout
+		android:layout_below="@id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	
+		<android.support.design.widget.AppBarLayout
+			
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/AppTheme.AppBarOverlay"
+			android:id="@+id/app_bar_layout">
+
+
+			<RelativeLayout
+				app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+				android:background="@color/colorPrimary"
+				android:layout_below="@id/toolbar"
+				app:popupTheme="@style/AppTheme.PopupOverlay"
+				android:layout_height="225dp"
+				android:layout_width="match_parent"
+				android:id="@+id/activitymainRelativeLayout1">
+
+				<android.support.v4.view.ViewPager
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/slide_pager"/>
+
+				<android.support.design.widget.TabLayout
+					android:id="@+id/indicator"
+					app:tabGravity="center"
+					app:tabBackground="@drawable/selector_indicator"
+					app:tabIndicatorHeight="0dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_alignParentBottom="true">
+
+				</android.support.design.widget.TabLayout>
+
+			</RelativeLayout>
+
+		</android.support.design.widget.AppBarLayout>
+
+	
+	
+	
+	<android.support.v7.widget.RecyclerView
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/Rv_movie"
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+		android:layout_below="@id/app_bar_layout"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="50dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+	<com.google.android.gms.ads.AdView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/adView"
+		ads:adSize="BANNER"
+		ads:adUnitId="ca-app-pub-5721094094081844/1014982784"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true">
+
+	</com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
